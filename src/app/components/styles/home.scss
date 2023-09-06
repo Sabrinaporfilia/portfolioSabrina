@@ -11,8 +11,8 @@
     "info";
 }
 
-@media(min-width: 768px){
-    .container{
+@media (min-width: 768px){
+    .container {
         padding: 70px 60px;
         height: 100vh;
         grid-template-rows: fit-content(100%);
@@ -21,8 +21,9 @@
         justify-items: start;
         justify-content: space-between;
         grid-template-areas: 
-        'header info'
-        'experience empty'
-        'empty-2 btns' 
+        "header info"
+        "experience btns";
     }
 }
+    
+
