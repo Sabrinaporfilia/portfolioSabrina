@@ -1,6 +1,11 @@
 import { Experience } from "./components/experience/experience";
 import { Header } from "./components/header/header";
-import './components/styles/home.scss'
+import { Info } from "./components/information/information";
+import Image from 'next/image'
+import './components/styles/home.scss';
+import { EmailIcon } from "./components/icon/email-icon";
+import SocialBtns from "./components/social-btns/social-btns";
+
 
 
 export default function Home() {
@@ -9,28 +14,20 @@ export default function Home() {
 
       <Header />
 
-     <Experience/>
+      <Experience />
 
-      <div className="infos">
-        <h3>Languages</h3>
-        <div className="languages-info">
-          <span>🇺🇲 EN - Basic</span>
-          <span>🇧🇷 PT-BR - Native Speaker</span>
+      <Info />
 
-        </div>
-        <h3>Education</h3>
-        <div className="education-info">
-          <span>🎓</span>
-          <span>Universidade</span>
-        </div>
         <div className="buttons">
-          <div className="social">
+          
+          <SocialBtns/>
 
-          </div>
-
-          <button>Contact Me</button>
+          <a className="btn-primary" href="mailto:sabrinaporfilia@gmail.com">
+            Contact Me
+          <EmailIcon/>
+            </a>
         </div>
-      </div>
+     
     </main>
   )
 }
